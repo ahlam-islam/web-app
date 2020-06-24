@@ -85,6 +85,7 @@ body
     text-transform: uppercase;
     font-size: 1.7rem;
     font-family: 'Mirza', cursive;
+    font-weight: bold;
 
   
 }
@@ -269,7 +270,7 @@ body
   width: 75%;
   margin: auto;
   margin-top: 6rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   transform: translate(-50% , -50%);
   position: absolute;
   top: 65%;
@@ -281,7 +282,9 @@ body
 {
     color: white;
     font-family: 'Mirza', cursive;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
     display: none;
 }
 
@@ -301,6 +304,9 @@ body
     margin-top: 5rem;
     color: white;
     font-family: 'Mirza', cursive;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 1.4rem;
     display: none;
 }
 
@@ -320,6 +326,7 @@ body
 .content input
 {
     font-size: 1.4rem;
+    cursor: pointer;
  
 }
 
@@ -333,7 +340,10 @@ body
     margin-top: 3rem;
 
 }
-
+.content a:hover
+{
+    color: white;
+}
 @media (max-width: 1000px)
 {
     .parient
