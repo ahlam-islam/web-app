@@ -1,0 +1,534 @@
+body
+{
+    background: url(../img/background/stars.png),linear-gradient(135deg,#08aeea 0%,#2ad6bf 100%)!important;
+}
+
+.navbar
+{
+    background-color: white;
+}
+
+.navbar img
+{
+    width: 6%;
+    height: 6%;
+    border-radius: 50%;
+}
+
+.navbar img , .navbar i
+{
+    cursor: pointer;
+}
+.navbar i
+{
+    font-size: 1.6rem;
+}
+.navbar span
+{
+    font-family: 'Mirza', cursive;
+    font-size: 1.6rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.navbar span i
+{
+    color:#2ad6bf ;
+}
+
+.navbar span::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(135deg,#08aeea 0%,#2ad6bf 100%);
+    bottom: 0px;
+    right: 0;
+}
+
+/*#####################end of navbar##########################################*/
+
+/*##################################start of manu section###############################################*/
+.menu-layout
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url(../img/background/stars.png),linear-gradient(135deg,#08aeea 0%,#2ad6bf 100%);
+    z-index: 2;
+    display:none;
+ 
+    
+    
+}
+.close-meun
+{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-layout ul
+{
+   
+    list-style-type: none;
+}
+
+.menu-layout ul li
+{
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-family: 'Mirza', cursive;
+
+  
+}
+.menu-layout ul li::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: rgba(244, 246, 255 , 0.6);
+    font-size: 5rem;
+    letter-spacing: 1.4rem;
+    font-weight: 700;
+
+    opacity: 0;
+    transition: 0.5s;
+    white-space: nowrap;
+
+}
+.menu-layout ul li:hover:before
+{
+    opacity: 1;
+    letter-spacing: 0rem;
+}
+
+.menu-layout ul li a
+{
+    text-decoration: none;
+    color: #07031a;
+    position: relative;
+    transition: 0.5s;
+    padding: 10px 15px 15px 15px;
+    overflow: hidden;
+    
+}
+.menu-layout ul:hover li a
+{
+    opacity: 0;
+    z-index: 100;
+}
+
+.menu-layout ul li a:hover
+{
+    transform: scale(1.4) !important;
+    background: rgb(244, 246, 255);
+    opacity: 1;
+   
+}
+
+
+.menu-layout ul li a::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(90deg ,transparent, rgba(255 ,255 ,255 ,0.8) , transparent );
+    transform: skew(35deg);
+}
+
+.menu-layout ul li a:hover:before
+{
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+
+
+.point-move
+{
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    width: 50%;
+    height: 50%;
+    animation: move infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+  
+
+}
+.point-move2
+{
+    position: absolute;
+    bottom: 10px;
+    right: -50px;
+    width: 50%;
+    height: 50%;
+    animation: move2 infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+  
+  
+}
+
+@keyframes move
+{
+    0%
+    {
+        top: 10%;
+        left: -30%;
+    }
+    20%
+    {
+        
+        left: -10%;
+        bottom: -25%;
+    }
+    40%
+    {
+        
+        right: 30%;
+        bottom: 75%;
+    }
+    60%
+    {
+        bottom: -50%;
+        left: -25%;
+
+    }
+    80%
+    {
+        top: -10%;
+        left: -90px;
+    }
+    100%
+    {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes move2
+{
+    10%
+    {
+        bottom: 10%;
+        right: -10%;
+    }
+    30%
+    {
+        
+        right: -8%;
+        bottom: -25%;
+    }
+    50%
+    {
+        
+        right: 12%;
+        bottom: -35%;
+    }
+    70%
+    {
+        bottom: 5%;
+        right: 5%;
+
+    }
+    90%
+    {
+        bottom: -10%;
+        right: -40px;
+    }
+    95%
+    {
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+/*##################################end of manu section###############################################*/
+
+/*##################################start of quetion section###############################################*/
+
+
+.parient
+{
+  width: 75%;
+  margin: auto;
+  margin-top: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50% , -50%);
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8)
+}
+
+.intro h4
+{
+    color: white;
+    font-family: 'Mirza', cursive;
+    font-size: 2.1rem;
+    display: none;
+}
+
+.quetion .lefy-cornaer
+{
+    clip-path: polygon(50% 0%, 95% 31%, 99% 91%, 75% 100%, 0 100%, 0% 60%, 0 0);
+    background-image: url(../img/img3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 75vh;
+    display: none;
+}
+
+
+.content
+{
+    margin-top: 5rem;
+    color: white;
+    font-family: 'Mirza', cursive;
+    display: none;
+}
+
+
+.content span
+{
+    font-size: 2rem;
+    padding: 1.5rem !important;
+}
+
+.content h5
+{
+    font-size: 2.3rem;
+    padding: 1.5rem !important;
+}
+
+.content input
+{
+    font-size: 1.4rem;
+ 
+}
+
+.content a
+{
+    background: linear-gradient(135deg,#08aeea 0%,#2ad6bf 100%);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+
+}
+
+@media (max-width: 1000px)
+{
+    .parient
+    {
+        width: 65%;
+        margin-top: 2rem;
+    }
+    .intro h4
+    {
+        font-size: 1.8rem;
+    }
+    .quetion .lefy-cornaer
+    {
+        height: 65vh;
+
+    }
+    .content
+    {
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 950px)
+{
+    .parient
+    {
+        width: 75%;
+        margin-top: 1rem;
+    }
+    .intro h4
+    {
+        font-size: 1.3rem;
+    }
+    .quetion .lefy-cornaer
+    {
+        height: 50vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+    .content
+    {
+        margin-top: 2rem;
+    }
+    .content span
+    {
+        font-size: 1.1rem;
+        padding: 0.9rem !important;
+    }
+
+    .content h5
+    {
+        font-size: 1.8rem;
+        padding: 0.9rem !important;
+    }
+
+    .content input
+    {
+        font-size: 1.1rem;
+    
+    }
+}
+@media (max-width: 950px)
+{
+    .parient
+    {
+        width: 90%;
+        margin-top: 0px;
+    }
+    .intro h4
+    {
+        font-size: 1rem;
+    }
+    .quetion .lefy-cornaer
+    {
+        height: 40vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+    .content
+    {
+        margin-top: 0px;
+    }
+    .content span
+    {
+        font-size: 1rem;
+        padding: 0.6rem !important;
+    }
+
+    .content h5
+    {
+        font-size: 0.9rem;
+        padding: 0.6rem !important;
+    }
+
+    .content input
+    {
+        font-size: 1rem;
+    
+    }
+    .content a
+    {
+    
+        padding: 0.1rem 0.3rem;
+        font-size: 1rem;
+        margin-top: 0.8rem;
+
+    }
+}
+
+
+/*###########################################end of the section #############################*/
+
+footer
+{
+    background:linear-gradient(135deg,#08aeea 0%,#2ad6bf 100%);
+    background-position: center center;
+    background-size: 100% 100%;
+    color: white;
+    font-family: 'Mirza', cursive;
+    padding-top: 6rem;
+}
+footer i
+{
+    padding: 2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 1s;
+}
+footer i:hover
+{
+color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/11/day_care_bg_01.png),linear-gradient(135deg,#08aeea 0%,#2ad6bf 100%)!important
+linear-gradient(72deg,#1bb3eb 0%,#25efcb 100%)!important
+url(https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/coding-background-texture.jpg),linear-gradient(180deg,#474ab6 0%,#9271f6 100%)!important
+url(https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/candy-shop-12-1.png),linear-gradient(180deg,#c6eefd 0%,rgba(230,111,175,0.41) 100%)!important*/
